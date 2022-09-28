@@ -1,16 +1,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-	<link rel="stylesheet" href="css/styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- Bootstrap CSS -->
+	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+	<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap-social/bootstrap-social.css">
+	<link rel="stylesheet" href="/css/styles.css">
 	<title>MeKtos Caldas</title>
-<!--	<link rel="stylesheet" href="BlueStyle.css"> Lo quité cuando puse bootstrap style-->
+
 </head>
 
 <body>
@@ -30,15 +32,17 @@
 					<li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li> <!--nav-item: set links horizontally / the active class highlights the actual page-->
 					<li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
 					<li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li> <!--fa-list: its the icon/ fa-lg is the size(large)-->
-					<li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li> 
+					<li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<header class="jumbotron">
 		<div class="container">
-			<div class="row row-header"> <!--added row-header as custom style in styles.css-->
-				<div class="col-12 col-sm-6"> <!--extraSmall screen uses whole screen and other the half-->
+			<div class="row row-header">
+				<!--added row-header as custom style in styles.css-->
+				<div class="col-12 col-sm-6">
+					<!--extraSmall screen uses whole screen and other the half-->
 					<h1>Bienvenid@s a MeKtos Caldas</h1>
 					<p>Primer Repo en Git, acá voy a incluir frase acerca del servicio</p>
 				</div>
@@ -47,11 +51,14 @@
 		</div>
 	</header>
 	<div class="container">
-		<div class="row row-content align-items-center"> <!--row-content was added later, when created styles.css file, originally it was only row class; after I added the align items to align vertically-->
-			<div class="col-12 col-sm-4 col-md-3"> <!--here are 3 sizes of screen and the columns they use-->
+		<div class="row row-content align-items-center">
+			<!--row-content was added later, when created styles.css file, originally it was only row class; after I added the align items to align vertically-->
+			<div class="col-12 col-sm-4 col-md-3">
+				<!--here are 3 sizes of screen and the columns they use-->
 				<h3>Our delicious products</h3>
 			</div>
-			<div class="col col-sm col-md"> <!--example: the last one will use 9 columns on medium and large screen-->
+			<div class="col col-sm col-md">
+				<!--example: the last one will use 9 columns on medium and large screen-->
 				<h2>Brevas</h2>
 				<p class="d-none d-sm-block">A unique combination of sweet flavours of this fruit, recollected from </p>
 				<!--the d-none d-sm-block is to hide some large elements of Xsmall screens-->
@@ -69,10 +76,12 @@
 		</div>
 
 		<div class="row row-content align-items-center">
-			<div class="col-12 col-sm-4 order-sm-last col-md-3"> <!--order-sm-last: to invert the order, set at left-->
+			<div class="col-12 col-sm-4 order-sm-last col-md-3">
+				<!--order-sm-last: to invert the order, set at left-->
 				<h3>Meet our collaborators and contributors</h3>
 			</div>
-			<div class="col col-sm order-sm-first col-md"> <!--order-sm-first: I putted to invert order, set at right-->
+			<div class="col col-sm order-sm-first col-md">
+				<!--order-sm-first: I putted to invert order, set at right-->
 				<h2>Julian Londoño</h2>
 				<h4>Executive chief</h4>
 				<p class="d-none d-sm-block">Award winning for social responsibility</p>
@@ -82,7 +91,8 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-4 offset-1 col-sm-2"> <!--on extrasmall:4 columns on medium and large:2 columns, afer i set the offset to move 1 column-->
+				<div class="col-4 offset-1 col-sm-2">
+					<!--on extrasmall:4 columns on medium and large:2 columns, afer i set the offset to move 1 column-->
 					<h5>links</h5>
 					<ul class="list-unstyled">
 						<li><a href="#">Home</a></li>
@@ -112,16 +122,18 @@
 				</div>
 			</div>
 			<div class="row justify-content-center">
-				<div class="col-auto">  <!--place content on the center of div-->
+				<div class="col-auto">
+					<!--place content on the center of div-->
 					<p>© Copyright 2022 Mektos Caldas</p>
 				</div>
 			</div>
 		</div>
 	</footer>
 
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 </body>
 
