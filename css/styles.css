@@ -5,20 +5,20 @@
 
 .row-content {
     margin: 0px auto;
-    padding: 20px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
     border-bottom: 1px ridge;
     min-height: 140px;
 }
 
 .footer {
-    background-color: #b4b1b1;
+    background-color: #61AF38;
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
 }
 
 .jumbotron {
-    background: #9575CD;
-    color: floralwhite;
+    background: #BBF0A4;
+    color: #61AF38;
 }
 
 .address {
@@ -37,5 +37,19 @@ body{
 }
 
 .navbar-dark {
-    background-color: #512DA8;
+    background-color: #61AF38;
+}
+
+a {
+    color: whitesmoke;
+}
+
+img {
+    max-width:100%;
+    max-height:100%;
+    display:block;
+}
+
+.breadcrumb {
+    background-color: #61AF38;
 }
