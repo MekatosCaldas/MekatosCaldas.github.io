@@ -53,3 +53,21 @@ img {
 .breadcrumb {
     background-color: #61AF38;
 }
+
+.imgCarousel {
+    width: 100%;
+    max-height: 500px;
+}
+
+.carousel-caption {
+    color: darkslategrey;
+    font-size:large;
+    font-weight:800;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}

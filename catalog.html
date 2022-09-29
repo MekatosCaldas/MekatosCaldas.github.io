@@ -1,0 +1,163 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> <!--ensayo quitando el primer / en git pages funcionaba poniendolo-->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Catalogo</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <!--the data-target element se encuentra mas abajo, se usa el id="Navbar" dentro del div que contiene la lista-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">MeKtos Caldas </a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <!--this is set to toggle menu on Xsmall screen-->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutmekatos.html"><span class="fa fa-info fa-lg"></span> Nosotros</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Catalogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container"> <!--para que ocupe todo el ancho de la pag, quitar este container-->
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="imgCarousel" src="images/chonta.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Chontaduro</h5>
+                        <p>Delicioso fruto del pacífico</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="imgCarousel" src="images/gaucho.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Gaucho</h5>
+                        <p>Dulce y bueno para pasar un largo rato</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="imgCarousel" src="images/jaleaB.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Jalea Blanca</h5>
+                        <p>Déjate llevar por su delicioso sabor</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="imgCarousel" src="images/jaleaN.jpg" alt="Fourth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Jalea Negra</h5>
+                        <p>La tradición de siempre en una rueda!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <h2>Listado de Productos</h2>
+        <div class="row row-content">
+            <div class="col-6 col-sm-4">
+                <h2>Producto 1</h2>
+                <p>Caracteristica</p>
+                <h4>$ 10k</h4>
+            </div>
+            <div class="col-6 col-sm-4">
+                <h2>Producto 2</h2>
+                <p>Caracteristica</p>
+                <h4>$ 10k</h4>
+            </div>
+            <div class="col-6 col-sm-4">
+                <h2>Producto 3</h2>
+                <p>Caracteristica</p>
+                <h4>$ 10k</h4>
+            </div>
+            <!--    </div>
+        <div class="row row-content"> -->
+            <div class="col-6 col-sm-4">
+                <h2>Producto 4</h2>
+                <p>Destacados</p>
+                <h4>$ 10k</h4>
+            </div>
+            <div class="col-6 col-sm-4">
+                <h2>Producto 5</h2>
+                <p>Destacados</p>
+                <h4>$ 10k</h4>
+            </div>
+            <div class="col-6 col-sm-4">
+                <h2>Producto 6</h2>
+                <p>Destacados</p>
+                <h4>$ 10k</h4>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <!--on extrasmall:4 columns on medium and large:2 columns, afer i set the offset to move 1 column-->
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./aboutmekatos.html">Nosotros</a></li>
+                        <li><a href="#">Catalogo</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Cómo encontrarnos</h5>
+                    <address>
+                        <i class="fa fa-whatsapp fa-lg"></i> 3234568721<br>
+                        <i class="fa fa-phone fa-lg"></i> 435987123<br> <!--text "tel" was replaced by i tag-->
+                        <i class="fa fa-envelope fa-lg"></i> <a href="mailto:mektos@food.net">mektos@food.net</a>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <!--on Xsmall will ocupy new line because there are already used the 12 columns by predecesor / after I added align-self-center to align on center of the row vertically-->
+                    <div class="text-center">
+                        <a href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a> <!--text "Google+" was replaced with <i> to show icon instead of text, after it was set as button with class"btn-social"-->
+                        <a href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a href="mailto:"><i class="fa fa-envelope fa-lg"></i></a> <!--text "Mail" was replaced by i tag-->
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <!--place content on the center of div-->
+                    <p>© Copyright 2022 Mektos Caldas</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
