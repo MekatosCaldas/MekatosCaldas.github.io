@@ -71,3 +71,10 @@ img {
         display: none;
     }
 }
+
+.productlist {
+    margin: 0px auto;
+    padding: 10px 10px 10px 10px;
+    border-style: ridge;
+    border-color: #e6e619;
+}
