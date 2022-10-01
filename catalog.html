@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Catálogo</title>
-
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body>
@@ -39,28 +39,33 @@
         <div class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="imgCarousel" src="images/chonta.jpg" alt="First slide">
+                    <img class="imgCarousel" src="images/chonta.jpg" alt="Chontaduro">
+                    <!--OJO: el texto lo dejo con 2 opciones diferentes: los 2 primeros productos tienen letra strong combinado con em, los demás tienen h's diferentes los cuales se pueden editar en estilos, escoger el más conveniente'-->
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Chontaduro</h5>
-                        <p>Delicioso fruto del pacífico</p>
+                        <strong>
+                            Chontaduro<br />
+                                      <em>Delicioso fruto del pacífico</em>
+                        </strong>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="imgCarousel" src="images/gaucho.jpg" alt="Second slide">
+                    <img class="imgCarousel" src="images/gaucho.jpg" alt="Gaucho">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Gaucho</h5>
-                        <p>Dulce y bueno para pasar un largo rato</p>
+                        <strong>
+                            Gaucho<br />
+                                  <em>Dulce y bueno para pasar un largo rato</em>
+                        </strong>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="imgCarousel" src="images/jaleaB.jpg" alt="Third slide">
+                    <img class="imgCarousel" src="images/jaleaB.jpg" alt="Jalea Blanca">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Jalea Blanca</h5>
                         <p>Déjate llevar por su delicioso sabor</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="imgCarousel" src="images/jaleaN.jpg" alt="Fourth slide">
+                    <img class="imgCarousel" src="images/jaleaN.jpg" alt="Jalea Negra">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Jalea Negra</h5>
                         <p>La tradición de siempre en una rueda!</p>
@@ -71,7 +76,67 @@
     </div>
 
     <div class="container text-center">
-        <h3>De cuales te antojaste? pide muy fácil por WhatsApp</h3>
+        <!--en este div primero hay boton para enlace whatsapp y luego tarjetas para cada product-->
+        <div class="row">
+            <div class="col-sm-6 col-md-12">
+                <div class="btn">
+                    <a class="btn btn-success" href="https://wa.me/3136725990">
+                        Antojado? pide muy fácil por WhatsApp<!--para que botón no se desborde en pantalla xs verificar Q caracteres-->
+                        <i class="fa fa-whatsapp fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--TARJETAS-->
+        <div class="row row-content"> <!--Otra opcion es adicionar card-check para que las tarjetas queden separadas entre sí, pero las ubica todas en la misma línea-->
+
+            <div class="col-6 col-sm-4 col-md-4 col-lg-3 card border-warning">
+                <img class="d-flex card-img-top" src="images/juli.jpg" alt="Julian"> <!--quité la clase img-thumbnail esta le pone un marco a la imagen-->
+                <div class="card-body">
+                    Primera prueba<br />
+                    <em>Este producto cuenta con calidad asegurada 100% (em)</em>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-3 card border-warning">
+                <img class="d-flex card-img-top" src="images/buffet.png" alt="Julian">
+                <div class="card-body">
+                    <p class="card-text">
+                        <strong>Segunda prueba (strong)</strong><br />
+                        Lo mejor de la naturaleza (dentro de card-text)
+                    </p> <!--forma alternativa de ingresar texto para darle estilos-->
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-3 card border-warning">
+                <img class="d-flex card-img-top" src="images/chonta.jpg" alt="Julian">
+                <div class="card-body">
+                    <h2>Prueba3 (h2)</h2><br />
+                    Las mejores tradiciones 
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-3 card border-warning">
+                <img class="d-flex card-img-top" src="images/gaucho.jpg" alt="Julian">
+                <div class="card-body">
+                    Cuarta prueba<br />
+                    <h3>Llevamos hasta tu casa (h3)</h3>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-3 card border-warning">
+                <img class="d-flex card-img-top" src="images/jaleaB.jpg" alt="Julian">
+                <div class="card-body">
+                    Quinta prueba<br />
+                    <h4>Llevamos hasta tu casa (h4)</h4>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-4 col-lg-3 card border-warning">
+                <img class="d-flex card-img-top" src="images/jaleaN.jpg" alt="Julian">
+                <div class="card-body">
+                    <h5>Sexta prueba (h5)</h5><br />
+                    Llevamos hasta tu casa
+                </div>
+            </div>
+
+        </div>
+
         <div class="row row-content">
             <div class="col-6 col-sm-4 productlist">
                 <h2>Producto 1</h2>
@@ -93,16 +158,16 @@
                 <p>Destacados</p>
                 <h4>$ 10k</h4>
             </div>
-            <div class="col-6 col-sm-4 productlist">
-                <h2>Producto 5</h2>
-                <p>Destacados</p>
-                <h4>$ 10k</h4>
-            </div>
-            <div class="col-6 col-sm-4 productlist">
-                <h2>Producto 6</h2>
-                <p>Destacados</p>
-                <h4>$ 10k</h4>
-            </div>
+            <!--    <div class="col-6 col-sm-4 productlist">
+            <h2>Producto 5</h2>
+            <p>Destacados</p>
+            <h4>$ 10k</h4>
+        </div>
+        <div class="col-6 col-sm-4 productlist">
+            <h2>Producto 6</h2>
+            <p>Destacados</p>
+            <h4>$ 10k</h4>
+        </div> -->
         </div>
 
 
